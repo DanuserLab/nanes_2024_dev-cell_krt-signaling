@@ -10,6 +10,15 @@ Rather than using this repository directly, most users will find it more conveni
 
 ### Migration Analysis
 
+Scripts in the `migration` folder use the [MonolayerKymographs](https://github.com/DanuserLab/MonolayerKymographs) package (Zaritsky et al., J Cell Biol, 2017) to analyze live imaging of monolayer or epidermal organoid migration assays. Note that this repository contains an adapted version of the package providing additional flexibility required for the epidermal organoid images.
+
+- `procTimelapse_monolayer_tif.m` runs the original package for monolayer images.
+- `procTimelapse_monolayer_MD.m` runs the adapted package for monolayer images.
+- `procTimelapse_EECs.m` runs the adapted package for epidermal organoids.
+- `segmentFluors.m` runs Otsu segmentation to annotate expression regions.
+- `tabulateData_byRegion.m` extracts migration data split by expression region.
+- `tabulateData_totalArea.m` extracts global migration area data.
+
 ### Filament Segmentation and Analysis
 
 ### Traction Force Microscopy
