@@ -21,6 +21,13 @@ Scripts in the `migration` folder use the [MonolayerKymographs](https://github.c
 
 ### Filament Segmentation and Analysis
 
+Scripts in the `filaments` folder use a modified version of the [u-delineate](https://github.com/DanuserLab/u-delineate) package (Gan et al., Cell Systems, 2016) to segment and analyze live imaging of intermediate filament networks. Note that this repository lacks features available in the latest u-delineate package release.
+
+- `runFilSegDyn.m` runs the package to segment filament networks and create dynamics score maps.
+- `runScrambledControl.m` creates synthetic "scrambled" filament networks to serve as controls for similarity measurements.
+- `wrangleData.m` extracts tabular data after running the package.
+- `wrangleData_curvature.m` extracts additional tabular data related to filament network snapshots.
+
 ### Traction Force Microscopy
 
 ### Package Libraries
