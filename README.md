@@ -47,7 +47,7 @@ Scripts in the `PLA` folder are used to analyze Proximity Ligation Assay experim
 
 ### Package Libraries
 
-All code required for the dependent packages is bundled in the `library` folder
+All code required for the dependent packages is bundled in the `library` folder, which should be added to the Matlab path.
 
 ## Links
 [Software Links](https://github.com/DanuserLab/)
