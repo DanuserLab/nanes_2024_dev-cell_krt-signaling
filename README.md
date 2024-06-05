@@ -8,6 +8,8 @@ Rather than using this repository directly, most users will find it more conveni
 
 ### Data Setup
 
+Scripts in this repository use the `MovieData` class to organize image data, metadeta, and analysis results. A `MovieData` object needs to be created for each image prior to running these pipelines. This can be done using the package GUIs or by modifying the `makeMDs.m` script from this repository.
+
 ### Migration Analysis
 
 Scripts in the `migration` folder use the [MonolayerKymographs](https://github.com/DanuserLab/MonolayerKymographs) package (Zaritsky et al., J Cell Biol, 2017) to analyze live imaging of monolayer or epidermal organoid migration assays. Note that this repository contains an adapted version of the package providing additional flexibility required for the epidermal organoid images.
@@ -29,6 +31,12 @@ Scripts in the `filaments` folder use a modified version of the [u-delineate](ht
 - `wrangleData_curvature.m` extracts additional tabular data related to filament network snapshots.
 
 ### Traction Force Microscopy
+
+Scripts in the `TFM` folder use the [u-inferforce](https://github.com/DanuserLab/u-inferforce) package (Han et al., Nature Methods, 2015) to reconstruct traction forces from traction force microscopy (TFM) images. This routine can be used to automate processing of a large number of images. An HPC cluster with >= 64 GB memory per node is recommended for the fastBEM method.
+
+- `getFileLists.m` is a convenience function to specify dataset organization. This function must be modified for each project.
+- `runTFMcalc.m` invokes the u-inferforce package.
+- `tabulateData.m` extracts per-cell data such as strain energy density.
 
 ### Package Libraries
 
