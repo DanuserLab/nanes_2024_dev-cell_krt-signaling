@@ -8,7 +8,7 @@ Rather than using this repository directly, most users will find it more conveni
 
 ### Data Setup
 
-Scripts in this repository use the `MovieData` class to organize image data, metadeta, and analysis results. A `MovieData` object needs to be created for each image prior to running these pipelines. This can be done using the package GUIs or by modifying the `makeMDs.m` script from this repository.
+Scripts in this repository use the `MovieData` class to organize image data, metadata, and analysis results. A `MovieData` object needs to be created for each image prior to running these pipelines. This can be done using the package GUIs or by modifying the `makeMDs.m` script from this repository.
 
 ### Migration Analysis
 
@@ -37,6 +37,13 @@ Scripts in the `TFM` folder use the [u-inferforce](https://github.com/DanuserLab
 - `getFileLists.m` is a convenience function to specify dataset organization. This function must be modified for each project.
 - `runTFMcalc.m` invokes the u-inferforce package.
 - `tabulateData.m` extracts per-cell data such as strain energy density.
+
+### Proximity Ligation Assay
+
+Scripts in the `PLA` folder are used to analyze Proximity Ligation Assay experiments. 
+
+- `plaDetect.m` uses wavelet denoising and multiscale products of wavelet coefficients to detect PLA signals. This algorithm was previously published as part of Aguet et al., Dev Cell, 2013 and is based on Olivo-Marin 2022.
+- Three python notebooks, `run-cellpose.ipynb`, `wrangle-data.ipynb`, and `visualizations.ipynb` can be used for downstream analysis. Cell segmentation is performed using [Cellpose](https://www.cellpose.org/), which must be installed separately. 
 
 ### Package Libraries
 
