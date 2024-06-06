@@ -1,4 +1,4 @@
-# Manuscript code repository - Nanes et al., Developmental Cell, 2024
+# Manuscript code repository - Nanes et al., 2024
 
 This repository contains code used in "Shifts in keratin isoform expression activate motility signals during wound healing," 2024, by Benjamin A Nanes, Kushal Bhatt, Evgenia Azarova, Divya Rajendran, Sabahat Munawar, Tadamoto Isogai, Kevin M Dean, and Gaudenz Danuser. Additional information can be found in the methods section of the paper.
 
