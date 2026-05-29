@@ -51,7 +51,4 @@ All code required for the dependent packages is bundled in the `library` folder,
 
 ## Links
 [Software Links](https://github.com/DanuserLab/)
-
-[Danuser Lab Website](https://www.danuserlab-utsw.org/)
-
 [Nanes Lab Website](https://lab.nanes.org)
